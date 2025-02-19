@@ -1,4 +1,5 @@
-﻿using BitfinexConnector.Interface;
+﻿using BitfinexConnector.Clients;
+using BitfinexConnector.Interface;
 using System.Linq;
 
 namespace BitfinexWPFApp

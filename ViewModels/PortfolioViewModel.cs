@@ -26,7 +26,7 @@ namespace BitfinexWPFApp.ViewModels
             PortfolioItems.Clear();
             foreach (var balance in balances)
             {
-                PortfolioItems.Add(new PortfolioItem { Currency = balance.Key, TotalBalance = balance.Value });
+                PortfolioItems.Add(new PortfolioItem { Currency = balance.Key, TotalBalance = Decimal.Round(balance.Value, 4) });
             }
         }
 

@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Portfolio" Height="450" Width="800">
     <Grid>
-        <DataGrid ItemsSource="{Binding PortfolioItems}" AutoGenerateColumns="True">
+        <DataGrid ItemsSource="{Binding PortfolioItems}" AutoGenerateColumns="False" Margin="0,133,0,0">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Currency" Binding="{Binding Currency}" />
                 <DataGridTextColumn Header="Total Balance" Binding="{Binding TotalBalance}" />
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Load Portfolio" Command="{Binding LoadPortfolioCommand}" />
+        <Button Content="Load Portfolio" Command="{Binding LoadPortfolioCommand}" Margin="0,0,0,306" />
     </Grid>
 </Window>
